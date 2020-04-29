@@ -1,0 +1,219 @@
+{
+	"status" : "OK",
+	"pointsOfInterests" : [
+	{
+	"location" : "1",
+	"x" : "16.48877",
+	"y" : "60.14311",
+	"name" : "Bårbyhällan"
+	},
+
+	{
+	"location" : "2",
+	"x" : "16.48095",
+	"y" : "60.10663",
+	"name" : "Båtsportsklubben"
+	},
+
+	{
+	"location" : "3",
+	"x" : "16.50868",
+	"y" : "60.13159",
+	"name" : "Brattnäset"
+	},
+
+	{
+	"location" : "4",
+	"x" : "16.47466",
+	"y" : "60.14203",
+	"name" : "Dragheden öst"
+	},
+
+	{
+	"location" : "5",
+	"x" : "16.47136",
+	"y" : "60.14346",
+	"name" : "Dragheden väst"
+	},
+
+	{
+	"location" : "6",
+	"x" : "16.44909",
+	"y" : "60.1187",
+	"name" : "Göknäset"
+	},
+
+	{
+	"location" : "7",
+	"x" : "16.47415",
+	"y" : "60.10404",
+	"name" : "Östa Camping"
+	},
+
+	{
+	"location" : "8",
+	"x" : "16.47674",
+	"y" : "60.10672",
+	"name" : "Östa norr"
+	},
+
+	{
+	"location" : "9",
+	"x" : "16.47127",
+	"y" : "60.10565",
+	"name" : "Östa väst"
+	},
+
+	{
+	"location" : "10",
+	"x" : "16.47325",
+	"y" : "60.12585",
+	"name" : "Sandön"
+	},
+
+	{
+	"location" : "11",
+	"x" : "16.51035",
+	"y" : "60.12755",
+	"name" : "Skekarsbo"
+	},
+
+	{
+	"location" : "12",
+	"x" : "16.47824",
+	"y" : "60.13012",
+	"name" : "Strångnäs"
+	},
+
+
+
+
+
+
+	{
+	"location" : "13",
+	"x" : "16.5287",
+	"y" : "60.17273",
+	"name" : "Cafe Udden"
+	},
+
+	{
+	"location" : "14",
+	"x" : "16.48372",
+	"y" : "60.16877",
+	"name" : "Edsviken"
+	},
+
+	{
+	"location" : "15",
+	"x" : "16.5023",
+	"y" : "60.15752",
+	"name" : "Gärdsvikarna"
+	},
+
+	{
+	"location" : "16",
+	"x" : "16.53181",
+	"y" : "60.17277",
+	"name" : "Gysinge"
+	},
+
+	{
+	"location" : "17",
+	"x" : "16.47666",
+	"y" : "60.15225",
+	"name" : "Ista"
+	},
+
+	{
+	"location" : "18",
+	"x" : "16.48537",
+	"y" : "60.15747",
+	"name" : "Karlholmen"
+	},
+
+
+
+
+
+
+	{
+	"location" : "19",
+	"x" : "17.1938",
+	"y" : "60.21955",
+	"name" : "Åshuvudet"
+	},
+
+	{
+	"location" : "20",
+	"x" : "17.1291",
+	"y" : "60.19891",
+	"name" : "Festplatsen"
+	},
+
+	{
+	"location" : "21",
+	"x" : "",
+	"y" : "",
+	"name" : ""
+	},
+
+	{
+	"location" : "22",
+	"x" : "17.3406",
+	"y" : "60.20745",
+	"name" : "Gnupe"
+	},
+
+	{
+	"location" : "23",
+	"x" : "17.222",
+	"y" : "60.17909",
+	"name" : "Hade"
+	},
+
+	{
+	"location" : "24",
+	"x" : "17.1946",
+	"y" : "60.19183",
+	"name" : "Korsnäset"
+	},
+
+	{
+	"location" : "25",
+	"x" : "17.2813",
+	"y" : "60.22312",
+	"name" : "Kvillanudden"
+	},
+
+	{
+	"location" : "26",
+	"x" : "17.2812",
+	"y" : "60.22302",
+	"name" : "Norra sundet!!!!!!!!!!!!!"
+	},
+
+	{
+	"location" : "27",
+	"x" : "17.5701",
+	"y" : "60.22987",
+	"name" : "Östveda"
+	},
+
+	{
+	"location" : "28",
+	"x" : "17.1919",
+	"y" : "60.21013",
+	"name" : "Sandnäsbadet"
+	},
+
+	{
+	"location" : "29",
+	"x" : "17.2239",
+	"y" : "60.1872",
+	"name" : "Södra sundet"
+	}
+	
+	]
+}
+

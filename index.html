@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektarbete 2020</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="https://js.arcgis.com/3.27/dijit/themes/claro/claro.css">
+        <link rel="stylesheet" href="https://js.arcgis.com/3.27/esri/css/esri.css">
+        
+    </head>
+    <body class="claro">
+        <div id="mapDiv">
+            <div id="buttonPanel">
+                <form name="buttonForm">
+                    <input type="button" class="panelButton_hiking" id="0" onclick="showData('hiking')">
+                    <input type="button" class="panelButton_biking" id="1" onclick="showData('biking')">
+                    <input type="button" class="panelButton" id="2">
+                    <input type="button" class="panelButton" id="3">
+                    <!--
+                    <nav>
+                        <ul class="navbar">
+                            <li class="navbarItem">
+                                <span class="dropdown" data-toggle="dropdown" data-target="mydropdownMenu1">Kategorier</span>
+                                <ul class="mydropdownMenu" id="mydropdownMenu1" style="display: none">
+                                    <li>Vandring</li>
+                                    <li>Cyckel</li>
+                                    <li>Kanot</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    -->
+                </form>
+            </div>
+            <!-- Javascript för meny där användaren kan välja olika kategorier
+            <script type="text/Javascript">
+                    let triggers = document.querySelectorAll('[data-toggle="dropdown"]');
+                    let containters = document.querySelectorAll('.mydropdownMenu');
+
+                    for(var i = 0; i < triggers.length; i++) {
+                        triggers[i].onclick = function(v) {
+                            v.stopPropagation();
+                            let target = document.getElementById(this.dataset.target);
+                            for(var j = 0; j < containters.length; j++) {
+                                if(containters[j].id != this.dataset.target) {
+                                    containters[j].style.display = 'none';
+                                }
+                            }
+
+                            if(target.style.display === 'none' || target.style.display === '') {
+                                console.log("Hej");
+                                target.style.display = 'block';
+                            } else {
+                                console.log("Hejdå");
+                                target.style.display = 'none';
+                            }
+                        }
+                    }
+
+                    window.onClick = function() {
+                        for(var i = 0; i < containters.length; i++) {
+                            containters[i].style.display = 'none';
+                        }
+                    }
+            </script>
+             -->
+            <script src="https://js.arcgis.com/3.27/"></script>
+            <script type="text/Javascript" src="scripts/mapScripts.js"></script>
+        </div>
+    </body>
+</html>

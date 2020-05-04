@@ -1,0 +1,1 @@
+Alla gpx filer är i XML format. Det rör sig dock om små filer som innehåller info om ett specifikt objekt eller plats, så ni kan ta fram data i lämpligt format manuellt. 

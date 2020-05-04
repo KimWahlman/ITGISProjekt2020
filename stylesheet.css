@@ -1,0 +1,70 @@
+html, body, #mapDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+#buttonPanel {
+    position: absolute;
+    top: 20px;
+    left: 65px;
+    z-index: 1;
+}
+
+.panelButton {
+    padding: 0;
+    margin: 0;
+    width: 98px;
+    height: 51px;
+/*
+    background-position: -3px;
+    background-image: url("resources/bussbild.png");
+*/
+    border: 1px solid #000000;
+}
+
+.panelButton_hiking {
+    width: 32px;
+    height: 32px;
+    background-image: url("resources/hiking.png");
+    border: 0px;    
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    background-color: #f0ffff;
+    border: 1px solid #000000;
+}
+
+.navbarItem {
+    list-style-type: none;
+}
+
+.navbarItem:not(:first-child) {
+    margin-left: 25px 
+}
+
+/* dropdown */
+.dropdown {
+    cursor: pointer;
+    user-select: none;
+    list-style-type: none;
+}
+
+.mydropdownMenu {
+    display: none;
+    background-color: #f0ffff;
+    position: absolute;
+    margin-left: -3px;
+    padding-left: 5px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.mydropdownMenu li {
+    list-style-type: none;
+    padding-right: 10rem;
+}

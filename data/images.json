@@ -1,0 +1,12 @@
+{
+    "poi": [
+        { 
+            "name": "Sandslott", 
+            "Description": "Ett fint sandslott", 
+            "images": [
+                {"file":"resrouce/sand.png"}, 
+                {"file":"resource/sand2.png"}
+            ]
+        }
+    ]
+}

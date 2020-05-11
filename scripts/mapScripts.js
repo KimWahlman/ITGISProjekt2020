@@ -3,6 +3,26 @@ var markers = new Array(4);
 var positions = new Array(4);
 var showJSONData;
 var flushMap;
+var jsonFiles = new Array();
+var elevations = false;
+
+function runAfterPageLoad(resource) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            fetch("data/" + resource + ".json").then(function(resp) {
+                return resp.json();
+            }).then(function(data) {
+                jsonFiles = data;
+            });
+            resolve('resolved');
+        }, 500);
+    });
+}
+
+async function loadArray(resource) {
+    jsonFiles = await runAfterPageLoad(resource);
+}
+
 
 require(["esri/map", "esri/layers/GraphicsLayer", "esri/graphic",
          "esri/InfoTemplate", "esri/geometry/Point", "esri/symbols/PictureMarkerSymbol",
@@ -11,6 +31,10 @@ require(["esri/map", "esri/layers/GraphicsLayer", "esri/graphic",
     function(Map, GraphicLayer, Graphic,
                 InfoTemplate, Point, PictureMarkerSymbol, SimpleLineSymbol, SimpleMarkerSymbol, Polyline, SimpleFillSymbol, Color, Polygon)
     {
+
+        loadArray("data");
+
+
         map = new Map("mapDiv",
             {
                 basemap: "osm",
@@ -33,11 +57,17 @@ require(["esri/map", "esri/layers/GraphicsLayer", "esri/graphic",
             var layers = new GraphicLayer();
             map.addLayer(layers);
             var pointArray = new Array();
+            var elevationArray = new Array();
 
             dojo.forEach(dataSource.posts, function(marker) {
                     var lng = marker.longitude;
                     var lat = marker.latitude;
                     pointArray.push([lng, lat]);
+
+                    if(typeof marker.elevation !== 'undefined') {
+                        var e = marker.elevation;
+                        elevationArray.push(e);
+                    }
             });
 
             for(var x = 0; x < pointArray.length; x++) {
@@ -60,6 +90,19 @@ require(["esri/map", "esri/layers/GraphicsLayer", "esri/graphic",
                     graphic.setInfoTemplate(info);
                     map.graphics.add(graphic);
                 }
+
+                if(elevations && x % 5 == 0) {
+                    pictureSymbol = new PictureMarkerSymbol("resources/elevationBall.png", 7, 7);
+                    var info = new InfoTemplate();
+                    info.setTitle("Elevation: " + x );
+                    info.setContent(elevationArray[x] + " meter över havet?");
+                    var point = new Point({"x": pointArray[x][0], "y": pointArray[x][1], "spatialReference": {"wkid": 4326}});
+                    var graphic = new Graphic(point, pictureSymbol);
+                    
+                    graphic.setInfoTemplate(info);
+                    map.graphics.add(graphic);
+                }
+
             }
 
             var symbol = new SimpleLineSymbol().setColor(new Color([color[0], color[1], color[2]]));
@@ -85,6 +128,7 @@ require(["esri/map", "esri/layers/GraphicsLayer", "esri/graphic",
 );
 
 function getJSONData(activity, filename, POI){ 
+    console.log("Hej");
     if(POI) {
         // Not implemented yet
     } else {
@@ -94,7 +138,16 @@ function getJSONData(activity, filename, POI){
     dojo.xhrGet(data, "location");
 }
 
-function showData(dataToShow) {
+function getJSONData(filename, POI){ 
+    if(POI) {
+        // Not implemented yet
+    } else {
+        var data = { url: filename, handleAs: "json", content: {}, load: showJSONData};
+    }
+    dojo.xhrGet(data);
+}
+
+function showData(dataToShow, elevation) {
     
     /* Clear anything that has been drawn on the map. */
     var flush = { url: "", content: {}, load: flushMap };
@@ -102,14 +155,33 @@ function showData(dataToShow) {
     /**************************************************/
 
     if(dataToShow === "hiking") {
-        var x = 11;
-        //setTimeout(function() {
-            for(;x < 23; x++)
-                getJSONData("BikingWalkingNoElevation", "Etapp_"+x+"_wgs84", false);
-        //}, 50);
+        if(elevation) {
+            for(x = 0; x < jsonFiles['Hiking']['WithElevation']['files'].length; x++)
+                getJSONData(jsonFiles['Hiking']['WithElevation']['fileLocation'] + jsonFiles['Hiking']['WithElevation']['files'][x]['name'] + ".json");
+            console.log("Loaded hiking with elevation..."); 
+            elevations = true;
+        }
+        else {
+            for(x = 0; x < jsonFiles['Hiking']['NoElevation']['files'].length; x++)
+                getJSONData(jsonFiles['Hiking']['NoElevation']['fileLocation'] + jsonFiles['Hiking']['NoElevation']['files'][x]['name'] + ".json");
+            console.log("Loaded hiking without elevation..."); 
+            elevations = false;
+        }
+           
     }
-    // rename files for biking?
     if(dataToShow === "biking") {
-        getJSONData("BikingWalkingNoElevation", "test", false);
+        if(elevation) {
+            for(x = 0; x < jsonFiles['Biking']['WithElevation']['files'].length; x++)
+                getJSONData(jsonFiles['Biking']['WithElevation']['fileLocation'] + jsonFiles['Biking']['WithElevation']['files'][x]['name'] + ".json");
+            console.log("Loaded biking with elevation..."); 
+            elevations = true;        
+        }
+        else {
+            for(x = 0; x < jsonFiles['Biking']['NoElevation']['files'].length; x++)
+                getJSONData(jsonFiles['Biking']['NoElevation']['fileLocation'] + jsonFiles['Biking']['NoElevation']['files'][x]['name'] + ".json");
+            console.log("Loaded biking without elevation...");
+            elevations = false; 
+        }  
     }
+
 }

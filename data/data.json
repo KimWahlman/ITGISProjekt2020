@@ -1,0 +1,45 @@
+{
+    "Hiking": {
+        "NoElevation": {
+            "fileLocation": "data/BikingWalkingNoElevation/",
+            "files": [
+                { "name": "Etapp_11_wgs84" },
+                { "name": "Etapp_12_wgs84" },
+                { "name": "Etapp_13_wgs84" },
+                { "name": "Etapp_14_wgs84" },
+                { "name": "Etapp_15_wgs84" },
+                { "name": "Etapp_16_wgs84" },
+                { "name": "Etapp_17_wgs84" },
+                { "name": "Etapp_19_wgs84" },
+                { "name": "Etapp_20_wgs84" },
+                { "name": "Etapp_21_wgs84" },
+                { "name": "Etapp_22_wgs84" }
+            ]
+        },
+        "WithElevation": {
+            "fileLocation": "data/BikingWalkingWithElevation/",
+            "files": [
+                { "name": "Walk_elevation_123547" },
+                { "name": "Walk_elevation_151851" }
+            ]
+        }
+    },
+
+    "Biking": {
+        "NoElevation": {
+            "fileLocation": "data/BikingWalkingNoElevation/",
+            "files": [
+                { "name": "Etapp_Slinga_11_1_wgs84" },
+                { "name": "Etapp_Slinga_12_1_wgs84" },
+                { "name": "Etapp_Slinga_12_2_inkl_kolkoja_wgs84" },
+                { "name": "Etapp_Slinga_21_1_wgs84" }
+            ]
+        },
+        "WithElevation":{
+            "fileLocation": "data/BikingWalkingWithElevation/",
+            "files": [
+                { "name": "Biking_elevation161008" }
+            ]
+        }
+    }
+}

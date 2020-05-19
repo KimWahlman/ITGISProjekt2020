@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Maps Toolbar</title>
+    
+    <link rel="stylesheet" href="https://js.arcgis.com/3.27/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/CSS">
+    
+    <script src="http://js.arcgis.com/3.27/"></script>
+    <script src="myScript.js" type="text/javascript"></script>
+    <script src="scripts/mapScripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+    </script>
+  </head>
+  <body class="claro">
+    <div id="mapDiv">
+        <span id="info" style="position:absolute; left:15px; bottom:5px; color:white; z-index:50;; background-color: black;"></span>
+    </div>
+    <div id="buttonPanel">
+      <div class="filtreraPanel">
+        <!-- <input type="button" class="panelButton" id="skapa"  title="SKAPA POI" value="Skapa poi"> -->
+        <input type="Checkbox" id="gångväg" title="Visa/göm promenadleder" value="Visa/göm promenadleder"/>  
+        <label for="gångväg" onclick="showData('hiking')"></label>
+
+        <input type="Checkbox" id="kanotled" title="Visa/Göm kanotleder"/>  
+        <label for="kanotled" onclick="showData('biking')"></label>
+
+        <input type="Checkbox" id="cykelled" title="Visa/Göm cykelleder"/>  
+        <label for="cykelled"></label>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+        <input type="Checkbox" id="rastplats" title="Visa/Göm rastplatser"/>  
+        <label for="rastplats"></label>
+
+        <input type="Checkbox" id="sovplatser" title="Visa/Göm sovplatser"/>  
+        <label for="sovplatser"></label>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      </div>
+    </div>
+  </body>
+</html>

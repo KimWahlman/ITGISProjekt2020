@@ -39,7 +39,15 @@
             "fileLocation": "data/BikingWalkingWithElevation/",
             "files": [
                 { "name": "Biking_elevation161008" }
+
             ]
         }
+    },
+
+    "Canoeing": {
+        "fileLocation" : "data/canoeing/",
+        "files": [  
+            { "name": "edsviken_gysinge" }
+        ]
     }
 }

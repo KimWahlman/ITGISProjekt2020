@@ -1,0 +1,379 @@
+{
+	"status" : "OK",
+	"InfoForReaders": "1=Matställe, 2=rastplats, 3=kanotväg, 4=Övernattning",
+	"pointsOfInterests" : [
+	{
+	"location" : "1",
+	"type": "2",
+	"x" : "16.814738",
+	"y" : "60.238802",
+	"name" : "Bårbyhällan",
+	"description" : "Rastplast med raststuga. Klippig, svår förankring för kajak.",
+	"images": [
+		{"file":"resources/matställe.png"}
+		
+	]
+	},
+
+	{
+	"location" : "2",
+	"type" : "3",
+	"x" : "16.801580",
+	"y" : "60.177853",
+	"name" : "Båtsportsklubben",
+	"description" : "Rast och iläggningsplats för kanot och kajak.",
+	"images": [
+		{"file":"resources/kanotväg.png"},
+		{"file":"resources/kanotväg.png"}
+	]
+	},
+
+	{
+	"location" : "3",
+	"type" : "2",
+	"x" : "16.847721",
+	"y" : "60.219273",
+	"name" : "Brattnäset",
+	"description" : "Rastplats med liten raststuga.",
+	"images": [
+		{"file":"resources/rastplats.png"}
+		
+	]
+	},
+
+	{
+	"location" : "4",
+	"type" : "3",
+	"x" : "16.790978",
+	"y" : "60.237670",
+	"name" : "Dragheden Öst",
+	"description" : "Rastplats med liten sandstrand.",
+	"images": [
+		{"file":"resources/övernattning.png"},
+		{"file":"resources/övernattning.png"}
+	]
+	},
+
+	{
+	"location" : "5",
+	"type" : "3",
+	"x" : "16.785356",
+	"y" : "60.239417",
+	"name" : "Dragheden väst/Hamrefjärden",
+	"description" : "Rast och iläggningsplats. Kortare, stenig strand.",
+	"images": [
+		{"file":"resources/övernattning.png"},
+		{"file":"resources/övernattning.png"}
+	]
+	},
+
+	{
+	"location" : "6",
+	"type" : "2",
+	"x" : "16.748980",
+	"y" : "60.196492",
+	"name" : "Göknäset",
+	"description" : "Rastplats med klippig angöring. Liten eldplats för rast.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "7",
+	"type" : "4",
+	"x" : "16.793506",
+	"y" : "60.173839",
+	"name" : "Östa Camping",
+	"description" : "Rast och iläggningsplats. Närhet till campingen i sig där övernattning finns möjlig. ",
+	"images": [
+		{"file":"resources/övernattning.png"},
+		{"file":"resources/övernattning.png"}
+	]
+	},
+
+	{
+	"location" : "8",
+	"type" : "2",
+	"x" : "16.797825",
+	"y" : "60.178732",
+	"name" : "Östa norr",
+	"description" : "Rast och iläggningsplats. Sandstrand och rastplats med liten stuga.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "9",
+	"type" : "2",
+	"x" : "16.786044",
+	"y" : "60.175106",
+	"name" : "Östa väst",
+	"description" : "Rast och iläggningsplats.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "10",
+	"type" : "2",
+	"x" : "16.788897",
+	"y" : "60.209825",
+	"name" : "Sandön",
+	"description" : "Rast och iläggningsplats med liten raststuga med eldplats.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "11",
+	"type" : "2",
+	"x" : "16.849873",
+	"y" : "60.212196",
+	"name" : "Skekarsbo",
+	"description" : "Rast och iläggningsplats med liten rasttuga med eldplats. Kortare, stenig anläggning/förankring",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+	{
+	"location" : "12",
+	"type" : "2",
+	"x" : "16.799580",
+	"y" : "60.217144",
+	"name" : "Strångnäs",
+	"description" : "Rastplats för cykel och kajakled.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+
+
+
+
+
+	{
+	"location" : "13",
+	"type" : "1",
+	"x" : "16.881196",
+	"y" : "60.286728",
+	"name" : "Cafe Udden",
+	"description" : "Cafeteria i Gysinge. Bakverk och kaffe för försäljning med fin utsikt över över Dalälven och Gysingeforsarna. ",
+	"images": [
+		{"file":"resources/matställe.png"},
+		{"file":"resources/matställe.png"}
+	]
+	},
+
+	{
+	"location" : "14",
+	"type" : "2",
+	"x" : "16.806256",
+	"y" : "60.280579",
+	"name" : "Edsviken",
+	"description" : "Rastplats för cykel och kajaktur, även badplats.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "15",
+	"type" : "2",
+	"x" : "16.836586",
+	"y" : "60.264057",
+	"name" : "Gärdsvekarna",
+	"description" : "Rastplats med svår angöring med kajak.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "16",
+	"type" : "4",
+	"x" : "16.884522",
+	"y" : "60.289158",
+	"name" : "Gysinge",
+	"description" : "Fint beläget vid Dalälven mellan Gästrikland och Uppland. Grundat 1670, Gysinge har en gammal histora av järnindustri med minnen från vallonerna.",
+	"images": [
+		{"file":"resources/övernattning.png"},
+		{"file":"resources/övernattning.png"}
+	]
+	},
+
+	{
+	"location" : "17",
+	"type" : "2",
+	"x" : "16.794291",
+	"y" : "60.253780",
+	"name" : "Ista",
+	"description" : "Start eller slutpunkt för kajakled till Östa camping.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "18",
+	"type" : "3",
+	"x" : "16.808468",
+	"y" : "60.262651",
+	"name" : "Karlholm",
+	"description" : "Rastplats i fin natur.",
+	"images": [
+		{"file":"resources/kanotväg.png"},
+		{"file":"resources/kanotväg.png"}
+	]
+	},
+
+
+
+
+
+
+	{
+	"location" : "19",
+	"type" : "2",
+	"x" : "16.735835",
+	"y" : "60.537666",
+	"name" : "Åshuvudet",
+	"description" : "Rastplats med liten raststuga.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "20",
+	"type" : "2",
+	"x" : "17.022774",
+	"y" : "60.334252",
+	"name" : "Festplatsen",
+	"description" : "Rastplats.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "21",
+	"type" : "2",
+	"x" : "17.056664",
+	"y" : "60.345599",
+	"name" : "Gnupe",
+	"description" : "Rastplats med svår angöring på liten brygga.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "22",
+	"type" : "2",
+	"x" : "17.037298",
+	"y" : "60.298903",
+	"name" : "Hade",
+	"description" : "Rast och iläggningsplats",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "23",
+	"type" : "2",
+	"x" : "17.033052",
+	"y" : "60.319611",
+	"name" : "Korsnäset",
+	"description" : "Rast och iläggningsplats på liten sandstrand.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "24",
+	"type" : "2",
+	"x" : "17.045857",
+	"y" : "60.371307",
+	"name" : "Kvillanudden",
+	"description" : "Rastplats med liten rastruga och eldplats.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "25",
+	"type" : "2",
+	"x" : "17.027476",
+	"y" : "60.371786",
+	"name" : "Norra sundet",
+	"description" : "Rast och iläggningsplats med liten brygga.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "26",
+	"type" : "2",
+	"x" : "17.094307",
+	"y" : "60.383052",
+	"name" : "Östveda",
+	"description" : "Rast och iläggningsplats",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+
+	{
+	"location" : "27",
+	"type" : "2",
+	"x" : "17.020156",
+	"y" : "60.350401",
+	"name" : "Sandnäsbadet",
+	"description" : "Rast och iläggningsplats, även en fin badstrand.",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	},
+	{
+	"location" : "28",
+	"type" : "2",
+	"x" : "17.037273",
+	"y" : "60.312112",
+	"name" : "Södra sundet",
+	"description" : "Rast och iläggningsplats",
+	"images": [
+		{"file":"resources/rastplats.png"},
+		{"file":"resources/rastplats.png"}
+	]
+	}
+	
+	]
+}
+

@@ -40,6 +40,21 @@ html, body, #mapDiv {
     border: 1px solid #000000;    
 }
 
+.panelButton_canoeing {
+    width: 32px;
+    height: 32px;
+    background-image: url("resources/canoeing.png");
+    background-repeat: no-repeat;
+    border: 1px solid #000000;        
+}
+
+.panelButton_POI {
+    padding: 0;
+    margin: 0;
+    width: 98px;
+    height: 51px;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -77,3 +92,113 @@ html, body, #mapDiv {
     list-style-type: none;
     padding-right: 10rem;
 }
+
+/* Petters CSS */
+#buttonToolbar {
+    background-color: beige;
+    border: solid 2px black;
+    opacity: 90%;
+    /*position: absolute;*/
+    z-index: 1;
+    margin-left: 1%;
+    margin-top: 6%;
+    padding: 5px;
+  }
+  
+  .filtreraPanel button {
+   background-color:green;
+   border: 2px solid black;
+   color:red;
+   padding: 10px;
+   cursor: pointer;
+   display: block;
+   margin: 5px;
+  }
+  
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"][id="gångväg"] + label {
+    background: url("resources/walking.png") no-repeat;
+    display: block;
+    height: 40px;
+    width: 40px;;
+    background-size: 100%;
+    padding-top: 5px;
+    
+  }
+  
+  input[type="checkbox"][id="gångväg"]:checked + label {
+    background: url("resources/walkingSorted.png") no-repeat;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background-size: 100%;
+  }
+  
+  input[type="checkbox"][id="kanotled"] + label {
+    background: url("resources/kanot.png") no-repeat;
+    display: block;
+    height: 40px;
+    width: 40px;;
+    background-size: 100%;
+    padding-top: 5px;
+  }
+  
+  input[type="checkbox"][id="kanotled"]:checked + label {
+    background: url("resources/kanotSorted.png") no-repeat;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background-size: 100%;
+  }
+  input[type="checkbox"][id="cykelled"] + label {
+    background: url("resources/bike.png") no-repeat;
+    display: block;
+    height: 40px;
+    width: 40px;;
+    background-size: 100%;
+    padding-top: 5px;
+  }
+  
+  input[type="checkbox"][id="cykelled"]:checked + label {
+    background: url("resources/bike.png") no-repeat;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background-size: 100%;
+  }
+  input[type="checkbox"][id="rastplats"] + label {
+    background: url("resources/picnic.png") no-repeat;
+    display: block;
+    height: 40px;
+    width: 40px;;
+    background-size: 100%;
+    padding-top: 5px;
+  }
+  
+  input[type="checkbox"][id="rastplats"]:checked + label {
+    background: url("resources/rastplatsSorted.png") no-repeat;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background-size: 100%;
+  }
+  input[type="checkbox"][id="sovplatser"] + label {
+    background: url("resources/overnattning.png") no-repeat;
+    display: block;
+    height: 40px;
+    width: 40px;;
+    background-size: 100%;
+    padding-top: 5px;
+  }
+  
+  input[type="checkbox"][id="sovplatser"]:checked + label {
+    background: url("resources/overnattningSorted.png") no-repeat;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background-size: 100%;
+  }

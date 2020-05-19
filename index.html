@@ -12,62 +12,39 @@
     </head>
     <body class="claro">
         <div id="mapDiv">
+            <span id="info" style="position:absolute; left:15px; bottom:5px; padding: 10px; z-index:50; background-color: white; border: 1px solid #000000"></span>
             <div id="buttonPanel">
+                <!--
                 <form name="buttonForm">
                     <input type="button" class="panelButton_hiking" id="0" onclick="showData('hiking')">
                     <input type="button" class="panelButton_biking" id="1" onclick="showData('biking')">
                     <input type="button" class="panelButton_hiking" id="2" onclick="showData('hiking', true)">
                     <input type="button" class="panelButton_biking" id="3" onclick="showData('biking', true)">
-                    <!--
-                    <nav>
-                        <ul class="navbar">
-                            <li class="navbarItem">
-                                <span class="dropdown" data-toggle="dropdown" data-target="mydropdownMenu1">Kategorier</span>
-                                <ul class="mydropdownMenu" id="mydropdownMenu1" style="display: none">
-                                    <li>Vandring</li>
-                                    <li>Cyckel</li>
-                                    <li>Kanot</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    -->
+                    <input type="button" class="panelButton_canoeing" id="4" onclick="showData('canoeing')">
+                    <input type="button" onclick="createPOI()" class="panelButton" id="skapa"  title="SKAPA POI" value="Skapa poi">
+                    <input type="button" class="panelButton" id="skapapolyline"  title="SKAPA POLYLINE" value="Skapa Polyline">
                 </form>
-            </div>
-            <!-- Javascript för meny där användaren kan välja olika kategorier
-            <script type="text/Javascript">
-                    let triggers = document.querySelectorAll('[data-toggle="dropdown"]');
-                    let containters = document.querySelectorAll('.mydropdownMenu');
-
-                    for(var i = 0; i < triggers.length; i++) {
-                        triggers[i].onclick = function(v) {
-                            v.stopPropagation();
-                            let target = document.getElementById(this.dataset.target);
-                            for(var j = 0; j < containters.length; j++) {
-                                if(containters[j].id != this.dataset.target) {
-                                    containters[j].style.display = 'none';
-                                }
-                            }
-
-                            if(target.style.display === 'none' || target.style.display === '') {
-                                console.log("Hej");
-                                target.style.display = 'block';
-                            } else {
-                                console.log("Hejdå");
-                                target.style.display = 'none';
-                            }
-                        }
-                    }
-
-                    window.onClick = function() {
-                        for(var i = 0; i < containters.length; i++) {
-                            containters[i].style.display = 'none';
-                        }
-                    }
-            </script>
-             -->
-            <script src="https://js.arcgis.com/3.27/"></script>
-            <script type="text/Javascript" src="scripts/mapScripts.js"></script>
+                -->
+                <div class="filtreraPanel">
+                    <input type="Checkbox" id="gångväg" title="Visa/göm promenadleder" value="Visa/göm promenadleder"/>  
+                    <label for="gångväg" onclick="showData('hiking')"></label>
+            
+                    <input type="Checkbox" id="kanotled" title="Visa/Göm kanotleder"/>  
+                    <label for="kanotled" onclick="showData('canoeing')"></label>
+            
+                    <input type="Checkbox" id="cykelled" title="Visa/Göm cykelleder"/>  
+                    <label for="cykelled" onclick="showData('biking')"></label>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            
+                    <input type="Checkbox" id="rastplats" title="Visa/Göm rastplatser"/>  
+                    <label for="rastplats"></label>
+            
+                    <input type="Checkbox" id="sovplatser" title="Visa/Göm sovplatser"/>  
+                    <label for="sovplatser"></label>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>    
+                <script src="https://js.arcgis.com/3.27/"></script>
+                <script type="text/Javascript" src="scripts/mapScripts.js"></script>
         </div>
     </body>
 </html>

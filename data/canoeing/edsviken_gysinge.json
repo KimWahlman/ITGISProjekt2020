@@ -1,0 +1,26 @@
+{ 
+    "name" : "Edsviken - Gysinge",
+    "desc" : "Kanotleden är ca. 4km lång",
+	"posts": [ 
+		{ "longitude" : 16.807329, "latitude" : 60.2839429 },
+		{ "longitude" : 16.8159121, "latitude" : 60.283411 },
+		{ "longitude" : 16.8204611, "latitude" : 60.2821984 },
+		{ "longitude" : 16.824066, "latitude" : 60.2807517 },
+		{ "longitude" : 16.8363827, "latitude" : 60.2802199 },
+		{ "longitude" : 16.8412321, "latitude" : 60.2814113 },
+		{ "longitude" : 16.8434637, "latitude" : 60.2837089 },
+		{ "longitude" : 16.8452232, "latitude" : 60.2863679 },
+		{ "longitude" : 16.8474978, "latitude" : 60.2872188 },
+		{ "longitude" : 16.8503731, "latitude" : 60.2876442 },
+		{ "longitude" : 16.8572825, "latitude" : 60.2865168 },
+		{ "longitude" : 16.8588274, "latitude" : 60.286687 },
+		{ "longitude" : 16.8597286, "latitude" : 60.2863679 },
+		{ "longitude" : 16.8605011, "latitude" : 60.2866445 },
+		{ "longitude" : 16.8637198, "latitude" : 60.2878782 },
+		{ "longitude" : 16.8725603, "latitude" : 60.2877293 },
+		{ "longitude" : 16.8766802, "latitude" : 60.2862616 },
+		{ "longitude" : 16.8797272, "latitude" : 60.2859 },
+		{ "longitude" : 16.8795555, "latitude" : 60.286134 },
+		{ "longitude" : 16.8806284, "latitude" : 60.2868359 }
+	]
+}
